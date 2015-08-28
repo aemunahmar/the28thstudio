@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<form>
+	<div class="menu-wrap">
+		<nav class="menu">
+			<ul class="clearfix">
+				<li><a id = "home" href="file:///C:/Users/GWCStudent/Desktop/The28th%20Studio%20Final%20Project/The28th%20Studio.html">Home</a></li>
+				<li>
+					<a href="#"> EDM </a>
+	 
+					<ul class="sub-menu">
+						<li><a id = "kygo" href="file:///C:/Users/GWCStudent/Desktop/The28th%20Studio%20Final%20Project/ArtistBio.html">Kygo</a></li>
+						<li><a id = "edx" href="file:///C:/Users/GWCStudent/Desktop/The28th%20Studio%20Final%20Project/ArtistBio7.html">EDX</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Pop</a>
+					<ul class="sub-menu">
+						<li><a id = "melaniemartinez" href="file:///C:/Users/GWCStudent/Desktop/The28th%20Studio%20Final%20Project/ArtistBio2.html">Melanie Martinez</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Alternative</a>
+					<ul class="sub-menu">
+						<li><a id = "kehlani" href="file:///C:/Users/GWCStudent/Desktop/The28th%20Studio%20Final%20Project/ArtistBio3.html">Kehlani</a></li>
+						<li><a id = "andraday" href="file:///C:/Users/GWCStudent/Desktop/The28th%20Studio%20Final%20Project/ArtistBio9.html">Andra Day</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Rock</a>
+					<ul class="sub-menu">
+						<li><a id = "halsey" href="file:///C:/Users/GWCStudent/Desktop/The28th%20Studio%20Final%20Project/ArtistBio4.html">Halsey</a></li>
+						<li><a id = "timeflies" href="file:///C:/Users/GWCStudent/Desktop/The28th%20Studio%20Final%20Project/ArtistBio10.html">Timeflies</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Reggae</a>
+					<ul class="sub-menu">
+						<li><a id = "xambassadors" href="file:///C:/Users/GWCStudent/Desktop/The28th%20Studio%20Final%20Project/ArtistBio5.html">X Ambassadors</a></li>
+						<li><a id ="sundarakarma" href="file:///C:/Users/GWCStudent/Desktop/The28th%20Studio%20Final%20Project/ArtistBio11.html">Sundara Karma</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Rnb Soul</a>
+					<ul class="sub-menu">
+						<li><a id = "majorlazer" href="file:///C:/Users/GWCStudent/Desktop/The28th%20Studio%20Final%20Project/ArtistBio6.html">Major Lazer</a></li>
+						<li><a id = "jesseroyal" href="file:///C:/Users/GWCStudent/Desktop/The28th%20Studio%20Final%20Project/ArtistBio12.html">Jesse Royal</a></li>
+					</ul>
+				<li>
+			</ul>
+		</nav>
+	</div>
+</form>		
+<title> Discover Artist | the28th Studio </title>
+<img src = "http://www.editorsmix.fm/wp-content/themes/ratius/timthumb.php?src=http%3A%2F%2Fwww.editorsmix.fm%2Fwp-content%2Fuploads%2F2014%2F01%2FPhantogram-Cover-e1389036251683.jpeg&h=&w=690&zc=1" align = "left" width = "350px" height = "180px"><h1>the28th Studio</h1>
+<style>
+h1{
+	font-size: 100px;
+	color: #A3CCCC;
+	text-align: right;
+	font-family: 'Poiret One', cursive;
+	}
+html{
+	background-image: url("Logo.png");
+	no-repeat center center fixed; 
+	webkit-background-size: cover;
+	moz-background-size: cover;
+	o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+}
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#FFFFF;
+}
+ 
+.menu {
+    width:1000px;
+    margin:0px auto;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+}
+ 
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#2e2728;
+}
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+}
+</style>
+</head>
+<body>
+
+	<iframe width="521px" height="500px" align="left" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/16463971&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+	<img id="Phantogram"src="http://www.windishagency.com/assets/22806/Phantogram_3.JPG" width=521px; height=500px; border= 0px;>
+	<iframe width="521px" height="500px" src="https://www.youtube.com/embed/RsQjC5zVnt8" frameborder="0" allowfullscreen></iframe>
+
+	<script>
+	var fileName = "GWCStudent"
+	
+	var changeFileName = function() {
+		document.getElementById("home").href = "file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/The28th%20Studio.html"
+		document.getElementById("kygo").href = "file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio.html"
+		document.getElementById("edx").href = "file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio7.html"
+		document.getElementById("melaniemartinez").href = "file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio2.html"
+		document.getElementById("phantogram").href = "file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio8.html"
+		document.getElementById("kehlani").href = "file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio3.html"
+		document.getElementById("andraday").href = "file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio9.html"
+		document.getElementById("halsey").href = "file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/artistBio4.html"
+		document.getElementById("timeflies").href = "file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio10.html"
+		document.getElementById("xambassadors").href = "file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio5.html"
+		document.getElementById("sundarakarma").href = "file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio11.html"
+		document.getElementById("jesseroyal").href = "file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio12.html"
+	}
+	
+	changeFileName();
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<h1> the28th Studio </h1>
+		<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Caesar+Dressing' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Akronim' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+		<script src="http://connect.soundcloud.com/sdk.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<style>
+	html{
+		background-image: url("Logo.png");
+		no-repeat center center fixed; 
+		webkit-background-size: cover;
+		moz-background-size: cover;
+		o-background-size: cover;
+		background-size: cover;
+	}
+	h1{
+	font-size: 500%;
+	font-family: 'Poiret One', cursive;
+	text-align: right;
+	color: #A3CCCC;
+	}
+	
+	button {
+	position: absolute;
+    top: 270px;
+	left: 440px;
+    height: 375px;
+    width: 375px;
+    border-radius: 500px;
+    border: 3px solid #33CCFF;
+	font-family:'Poiret One', cursive;
+	font-size: 400%
+	
+	}
+	#EDM {
+	position: absolute;
+	top: 35px;
+	left: 420px;
+	height: 250px;
+	width: 250px;
+	border-radius: 350px;
+	background-color: #00FF00;
+	border: 3px solid #33CCFF
+	font-family:'Poiret One', cursive;
+	font-size: 400%
+	}
+	#Pop{
+	position: absolute;
+	top: 195px;
+	left: 225px;
+	height: 250px;
+	width: 250px;
+	border-radius: 350px;
+	background-color:#FF0066;
+	font-family:'Poiret One', cursive;
+	font-size: 400%
+	
+	}
+	#Alternative{
+	position: absolute;
+    top: 445px;
+    left: 210px;
+	height: 250px;
+	width: 250px;
+	border-radius: 350px;
+	background-color: #CC66FF;
+	font-family:'Amatic SC', cursive;
+	font-size: 400%
+	}
+	#Rock{
+	position: absolute;
+	top: 70px;
+	left: 670px;
+	height: 250px;
+	width:250px;
+	border-radius: 350px;
+	background-color:#E86C19;
+	font-family:'Akronim', cursive;
+	font-size: 400%
+	}
+	#Reggae{
+	position: absolute;
+	top: 275px;
+	left: 810px;
+	height: 250px;
+	width:250px;
+	border-radius: 350px;
+	background-color: #66FFCC;
+	color: #FF6600;
+	font-family:'Caesar Dressing', cursive;
+	font-size: 400%
+	}
+	#R-B-Soul{
+	position: absolute;
+	top: 518px;
+	left: 753px;
+	height: 250px;
+	width: 250px;
+	border-radius: 350px;
+	background-color: #0A1A14;
+	color: #E6E8E8;
+	font-family:'Bad Script', cursive;
+	font-size: 400%
+	}
+	
+	#B1{
+	position: absolute;
+    top: 270px;
+	left: 440px;
+    height: 375px;
+    width: 375px;
+    border-radius: 500px;
+    border: 3px solid #33CCFF;
+	font-family:'Poiret One', cursive;
+	text-align: center; 
+	font-size: 400%
+	}
+
+
+		
+		</style>
+	</head>
+	<body>
+	<form>
+		<button class="button" id="B1">Discover Artist</button>	
+		<button class="button" id="EDM">EDM </button>
+		<button class="button" id="Pop"> POP</button> 	
+		<button class="button" id="Alternative">Alternative </button>	
+		<button class="button" id="Rock" >Rock </button>	
+		<button class="button" id="Reggae">Reggae </button>	
+		<button class="button" id="R-B-Soul">RnB Soul </button>	
+
+	</form>
+	<script>
+		var fileName = "GWCStudent"
+		var randomlinks=[];				//new Array()					
+
+		randomlinks[0]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio.html"
+		randomlinks[1]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio4.html"
+		randomlinks[2]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio2.html"
+		randomlinks[3]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio5.html"
+		randomlinks[4]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio6.html"
+		randomlinks[5]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio3.html"
+		randomlinks[6]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio7.html"
+		randomlinks[7]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio8.html"
+		randomlinks[8]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio9.html"
+		randomlinks[9]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio10.html"
+		randomlinks[10]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio11.html"
+		randomlinks[11]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio12.html"
+		
+		
+		function randomlink(){
+		window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+		}
+		
+		var EDM = ["file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio.html", 
+					"file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio7.html"]
+		$("#EDM").click(function(event) {
+			event.preventDefault();
+			window.location = EDM[Math.floor(Math.random()*EDM.length)]
+		});
+		var Pop = ["file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio4.html",
+					"file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio10.html"]
+		$("#Pop").click(function(event) {
+			event.preventDefault();
+			window.location  = Pop[Math.floor(Math.random()*Pop.length)]
+		});
+		var Alternative = ["file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio2.html",
+							"file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio8.html"]
+		$("#Alternative").click(function(event) {
+			event.preventDefault();
+			window.location = Alternative[Math.floor(Math.random()*Alternative.length)]
+		});
+		var Rock = ["file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio5.html",
+					 "file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio11.html"]
+		$("#Rock").click(function(event) {
+			event.preventDefault();
+			window.location = Rock[Math.floor(Math.random()*Rock.length)]
+		});
+		var Reggae = ["file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio6.html",
+						"file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio12.html"]
+		$("#Reggae").click(function(event) {
+			event.preventDefault();
+			window.location = Reggae[Math.floor(Math.random()*Reggae.length)]
+		});
+		var RnBSoul = ["file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio3.html",
+						"file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio9.html"]
+		$("#R-B-Soul").click(function(event) {
+			event.preventDefault();
+			window.location = RnBSoul[Math.floor(Math.random()*RnBSoul.length)]
+		});
+	</script>
+		
+	<form method="post">
+	<p><input type="button" id="B1" name="button" value= " Discover 
+Artist"onclick="randomlink()"></p> </form>
+
+	
+</html>
