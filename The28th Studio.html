@@ -141,56 +141,56 @@
 		var fileName = "GWCStudent"
 		var randomlinks=[];				//new Array()					
 
-		randomlinks[0]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio.html"
-		randomlinks[1]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio4.html"
-		randomlinks[2]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio2.html"
-		randomlinks[3]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio5.html"
-		randomlinks[4]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio6.html"
-		randomlinks[5]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio3.html"
-		randomlinks[6]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio7.html"
-		randomlinks[7]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio8.html"
-		randomlinks[8]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio9.html"
-		randomlinks[9]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio10.html"
-		randomlinks[10]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio11.html"
-		randomlinks[11]="file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio12.html"
+		randomlinks[0]="http://aemunahmar.github.io/the28thstudio/ArtistBio.html"
+		randomlinks[1]="http://aemunahmar.github.io/the28thstudio/ArtistBio4.html
+		randomlinks[2]="http://aemunahmar.github.io/the28thstudio/ArtistBio2.html"
+		randomlinks[3]="http://aemunahmar.github.io/the28thstudio/ArtistBio5.html"
+		randomlinks[4]="http://aemunahmar.github.io/the28thstudio/ArtistBio6.html"
+		randomlinks[5]="http://aemunahmar.github.io/the28thstudio/ArtistBio3.html"
+		randomlinks[6]="http://aemunahmar.github.io/the28thstudio/ArtistBio7.html"
+		randomlinks[7]="http://aemunahmar.github.io/the28thstudio/ArtistBio8.html"
+		randomlinks[8]="http://aemunahmar.github.io/the28thstudio/ArtistBio9.html"
+		randomlinks[9]="http://aemunahmar.github.io/the28thstudio/ArtistBio10.html"
+		randomlinks[10]="http://aemunahmar.github.io/the28thstudio/ArtistBio11.html"
+		randomlinks[11]="http://aemunahmar.github.io/the28thstudio/ArtistBio12.html"
 		
 		
 		function randomlink(){
 		window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
 		}
 		
-		var EDM = ["file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio.html", 
-					"file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio7.html"]
+		var EDM = ["http://aemunahmar.github.io/the28thstudio/ArtistBio.html", 
+				"http://aemunahmar.github.io/the28thstudio/ArtistBio7.html"]
 		$("#EDM").click(function(event) {
 			event.preventDefault();
 			window.location = EDM[Math.floor(Math.random()*EDM.length)]
 		});
-		var Pop = ["file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio4.html",
-					"file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio10.html"]
+		var Pop = ["http://aemunahmar.github.io/the28thstudio/ArtistBio4.html",
+				"http://aemunahmar.github.io/the28thstudio/ArtistBio10.html"]
 		$("#Pop").click(function(event) {
 			event.preventDefault();
 			window.location  = Pop[Math.floor(Math.random()*Pop.length)]
 		});
-		var Alternative = ["file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio2.html",
-							"file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio8.html"]
+		var Alternative = ["http://aemunahmar.github.io/the28thstudio/ArtistBio2.html",
+					"http://aemunahmar.github.io/the28thstudio/ArtistBio8.html"]
 		$("#Alternative").click(function(event) {
 			event.preventDefault();
 			window.location = Alternative[Math.floor(Math.random()*Alternative.length)]
 		});
-		var Rock = ["file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio5.html",
-					 "file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio11.html"]
+		var Rock = ["http://aemunahmar.github.io/the28thstudio/ArtistBio5.html",
+					 "http://aemunahmar.github.io/the28thstudio/ArtistBio11.html"]
 		$("#Rock").click(function(event) {
 			event.preventDefault();
 			window.location = Rock[Math.floor(Math.random()*Rock.length)]
 		});
-		var Reggae = ["file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio6.html",
-						"file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio12.html"]
+		var Reggae = ["http://aemunahmar.github.io/the28thstudio/ArtistBio6.html",
+					"file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio12.html"]
 		$("#Reggae").click(function(event) {
 			event.preventDefault();
 			window.location = Reggae[Math.floor(Math.random()*Reggae.length)]
 		});
-		var RnBSoul = ["file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio3.html",
-						"file:///C:/Users/" + fileName + "/Desktop/The28th%20Studio%20Final%20Project/ArtistBio9.html"]
+		var RnBSoul = ["http://aemunahmar.github.io/the28thstudio/ArtistBio3.html",
+					"http://aemunahmar.github.io/the28thstudio/ArtistBio9.html"]
 		$("#R-B-Soul").click(function(event) {
 			event.preventDefault();
 			window.location = RnBSoul[Math.floor(Math.random()*RnBSoul.length)]
