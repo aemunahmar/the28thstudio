@@ -56,7 +56,7 @@
 <img src = "http://melaniemartinezmusic.com/images/logo-compact.png" align = "left" width = "600px" height = "165px"><h1>the28th Studio</h1>
 <style>
 h1{
-	font-size: 100px;
+	font-size: 160px;
 	color: #A3CCCC;
 	text-align: right;
 	font-family: 'Poiret One', cursive;
@@ -147,14 +147,225 @@ html{
  
 .sub-menu li a:hover, .sub-menu .current-item a {
     background:#3e3436;
+}	
+h1{
+	font-size: 100px;
+	color: #A3CCCC;
+	text-align: right;
+	font-family: 'Poiret One', cursive;
+	}
+
+body{
+	background-image: url("Logo.png");
+	no-repeat center center fixed; 
+	webkit-background-size: cover;
+	moz-background-size: cover;/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#FFFFF;
+}
+ 
+.menu {
+    width:1000px;
+    margin:0px auto;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+}
+ 
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#2e2728;
+}
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+}
+	o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+}
+/*----- Toggle Button -----*/
+.toggle-nav {
+	display:none;
+}
+ 
+/*----- Menu -----*/
+@media screen and (min-width: 860px) {
+	.menu {
+		width:100%;
+		padding:10px 18px;
+		box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+		border-radius:3px;
+		background:#FFFFF;
+	}
+}
+ 
+.menu ul {
+	display:inline-block;
+}
+ 
+.menu li {
+	margin:0px 50px 0px 0px;
+	float:left;
+	list-style:none;
+	font-size:17px;
+}
+ 
+.menu li:last-child {
+	margin-right:0px;
+}
+ 
+.menu a {
+	text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+	color:#777;
+	transition:color linear 0.15s;
+}
+ 
+.menu a:hover, .menu .current-item a {
+	text-decoration:none;
+	color:#66a992;
+}
+ 
+
+ 
+/*----- Responsive -----*/
+@media screen and (max-width: 1150px) {
+	.wrap {
+		width:90%;
+	}
+}
+ 
+@media screen and (max-width: 970px) {
+	.search-form input {
+		width:120px;
+	}
+}
+ 
+@media screen and (max-width: 860px) {
+	.menu {
+		position:relative;
+		display:inline-block;
+	}
+ 
+	.menu ul.active {
+		display:none;
+	}
+ 
+	.menu ul {
+		width:100%;
+		position:absolute;
+		top:120%;
+		left:0px;
+		padding:10px 18px;
+		box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+		border-radius:3px;
+		background:#303030;
+	}
+ 
+	.menu ul:after {
+		width:0px;
+		height:0px;
+		position:absolute;
+		top:0%;
+		left:22px;
+		content:'';
+		transform:translate(0%, -100%);
+		border-left:7px solid transparent;
+		border-right:7px solid transparent;
+		border-bottom:7px solid #303030;
+	}
+ 
+	.menu li {
+		margin:5px 0px 5px 0px;
+		float:none;
+		display:block;
+	}
+ 
+	.menu a {
+		display:block;
+	}
+ 
+	.toggle-nav {
+		padding:20px;
+		float:left;
+		display:inline-block;
+		box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+		border-radius:3px;
+		background:#303030;
+		text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+		color:#777;
+		font-size:20px;
+		transition:color linear 0.15s;
+	}
+ 
+	.toggle-nav:hover, .toggle-nav.active {
+		text-decoration:none;
+		color:#66a992;
+	}
 }
 </style>
 </head>
 <body>
 
-	<iframe width="450px" height="500px" align="left" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/133673143&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-	<img id="melanie"src="http://36.media.tumblr.com/0e339987257f4ee0ea55e2c288d449e9/tumblr_ntgx3u4D9T1ue83iyo1_1280.jpg" width="521px"; height="500px"; border= 0px;>
-	<iframe width="450px" height="500px" src="https://www.youtube.com/embed/8qLqbC7BifU" frameborder="0" allowfullscreen align = "right"></iframe>
+	<iframe width="610px" height="500px" align="left" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/133673143&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+	<img id="melanie"src="http://36.media.tumblr.com/0e339987257f4ee0ea55e2c288d449e9/tumblr_ntgx3u4D9T1ue83iyo1_1280.jpg" width="630px"; height="500px"; border= 0px;>
+	<iframe width="610px" height="500px" src="https://www.youtube.com/embed/8qLqbC7BifU" frameborder="0" allowfullscreen align = "right"></iframe>
 	
 
 </body>
